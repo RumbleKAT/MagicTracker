@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58646DAD20F12780004024DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646DAC20F12780004024DE /* AppDelegate.swift */; };
+		58646DAF20F12780004024DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646DAE20F12780004024DE /* ViewController.swift */; };
+		58646DB120F12780004024DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58646DB020F12780004024DE /* Assets.xcassets */; };
+		58646DB420F12780004024DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58646DB220F12780004024DE /* Main.storyboard */; };
+		58646DBD20F127C4004024DE /* ShellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646DBC20F127C4004024DE /* ShellManager.swift */; };
+		58646DBF20F12EC2004024DE /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646DBE20F12EC2004024DE /* TimeManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58646DA920F12780004024DE /* Magic Mouse Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Mouse Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58646DAC20F12780004024DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58646DAE20F12780004024DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58646DB020F12780004024DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58646DB320F12780004024DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58646DB520F12780004024DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58646DB620F12780004024DE /* Magic_Mouse_Battery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Magic_Mouse_Battery.entitlements; sourceTree = "<group>"; };
+		58646DBC20F127C4004024DE /* ShellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellManager.swift; sourceTree = "<group>"; };
+		58646DBE20F12EC2004024DE /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58646DA620F1277F004024DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58646DA020F1277F004024DE = {
+			isa = PBXGroup;
+			children = (
+				58646DAB20F12780004024DE /* Magic Mouse Battery */,
+				58646DAA20F12780004024DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58646DAA20F12780004024DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58646DA920F12780004024DE /* Magic Mouse Battery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58646DAB20F12780004024DE /* Magic Mouse Battery */ = {
+			isa = PBXGroup;
+			children = (
+				58646DAC20F12780004024DE /* AppDelegate.swift */,
+				58646DAE20F12780004024DE /* ViewController.swift */,
+				58646DB020F12780004024DE /* Assets.xcassets */,
+				58646DB220F12780004024DE /* Main.storyboard */,
+				58646DB520F12780004024DE /* Info.plist */,
+				58646DB620F12780004024DE /* Magic_Mouse_Battery.entitlements */,
+				58646DBC20F127C4004024DE /* ShellManager.swift */,
+				58646DBE20F12EC2004024DE /* TimeManager.swift */,
+			);
+			path = "Magic Mouse Battery";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58646DA820F1277F004024DE /* Magic Mouse Battery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58646DB920F12780004024DE /* Build configuration list for PBXNativeTarget "Magic Mouse Battery" */;
+			buildPhases = (
+				58646DA520F1277F004024DE /* Sources */,
+				58646DA620F1277F004024DE /* Frameworks */,
+				58646DA720F1277F004024DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magic Mouse Battery";
+			productName = "Magic Mouse Battery";
+			productReference = 58646DA920F12780004024DE /* Magic Mouse Battery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58646DA120F1277F004024DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "송명진";
+				TargetAttributes = {
+					58646DA820F1277F004024DE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 58646DA420F1277F004024DE /* Build configuration list for PBXProject "Magic Mouse Battery" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58646DA020F1277F004024DE;
+			productRefGroup = 58646DAA20F12780004024DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58646DA820F1277F004024DE /* Magic Mouse Battery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58646DA720F1277F004024DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58646DB120F12780004024DE /* Assets.xcassets in Resources */,
+				58646DB420F12780004024DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58646DA520F1277F004024DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58646DBD20F127C4004024DE /* ShellManager.swift in Sources */,
+				58646DAF20F12780004024DE /* ViewController.swift in Sources */,
+				58646DBF20F12EC2004024DE /* TimeManager.swift in Sources */,
+				58646DAD20F12780004024DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58646DB220F12780004024DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58646DB320F12780004024DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58646DB720F12780004024DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58646DB820F12780004024DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		58646DBA20F12780004024DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Magic Mouse Battery/Magic_Mouse_Battery.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Magic Mouse Battery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mjproject.Magic-Mouse-Battery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		58646DBB20F12780004024DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Magic Mouse Battery/Magic_Mouse_Battery.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Magic Mouse Battery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mjproject.Magic-Mouse-Battery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58646DA420F1277F004024DE /* Build configuration list for PBXProject "Magic Mouse Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58646DB720F12780004024DE /* Debug */,
+				58646DB820F12780004024DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58646DB920F12780004024DE /* Build configuration list for PBXNativeTarget "Magic Mouse Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58646DBA20F12780004024DE /* Debug */,
+				58646DBB20F12780004024DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58646DA120F1277F004024DE /* Project object */;
+}
