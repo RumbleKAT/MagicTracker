@@ -29,8 +29,24 @@ class ViewController: NSViewController {
         print(msg.title)
         */
         
-        testCall(callback: testCall2)
+        //testCall(callback: testCall2)
 
+        let thread = ThreadManager()
+        thread.setThread(testCall2)
+        
+        let thread_2 = ThreadManager()
+        thread_2.setThread(testCall3)
+        
+    }
+    
+    func testCall(_ param:String){
+        print("Param : " + param)
+    }
+    
+    func testCall3(){
+        for i in 0...100 {
+            print(i)
+        }
     }
     
     func testCall2(){
