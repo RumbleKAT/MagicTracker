@@ -9,9 +9,14 @@
 import Foundation
 
 class ThreadManager{
+    
+    let queue:DispatchQueue
+    
+    init() {
+        queue = DispatchQueue(label: "task")
+    }
+    
     public func setThread(_ callback: @escaping () -> Void){
-        let queue = DispatchQueue(label: "task1")
-        
         queue.async {
             callback()
         }
