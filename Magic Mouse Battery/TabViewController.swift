@@ -10,27 +10,41 @@ import Cocoa
 
 class TabViewController: NSViewController {
 
+    @IBOutlet weak var MouseText: NSTextField!
+    @IBOutlet weak var BatteryPercent: NSTextField!
+    let appDelegate = NSApplication.shared.delegate as! AppDelegate
+
+    let shellManager = ShellManager();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
     }
+    
+    public func update(){
+        print("!!")
+        self.BatteryPercent.stringValue = getBattery()
+    }
+    
 }
 
 extension TabViewController{
     
     static func freshController() -> TabViewController {
-        //1.
         let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
-        //2.
         let identifier = NSStoryboard.SceneIdentifier(rawValue: "tab")
-        
-        print (storyboard)
-        print(identifier)
-        
-        //3.
         guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? TabViewController else {
             fatalError("Why cant i find tab? - Check Main.storyboard")
         }
         return viewcontroller
     }
+    
+    public func updateView(){
+        self.BatteryPercent.stringValue = getBattery()
+    }
+    
+    private func getBattery() -> String{
+        let command:String = shellManager.bash("ls")
+        return command
+    }
+    
 }
