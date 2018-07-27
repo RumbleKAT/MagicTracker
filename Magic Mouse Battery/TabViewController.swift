@@ -12,19 +12,17 @@ class TabViewController: NSViewController {
 
     @IBOutlet weak var MouseText: NSTextField!
     @IBOutlet weak var BatteryPercent: NSTextField!
+    
     let appDelegate = NSApplication.shared.delegate as! AppDelegate
-
     let shellManager = ShellManager();
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     public func update(){
         print("!!")
-        self.BatteryPercent.stringValue = getBattery()
+       // self.BatteryPercent.stringValue = getBattery()
     }
-    
 }
 
 extension TabViewController{

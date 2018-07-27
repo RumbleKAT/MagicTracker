@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "battery_01.png",
+      "filename" : "plugIcon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "battery_02.png",
+      "filename" : "plugIcon2.png",
       "scale" : "2x"
     },
     {
