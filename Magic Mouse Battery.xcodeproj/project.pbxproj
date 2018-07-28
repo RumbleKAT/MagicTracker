@@ -13,6 +13,7 @@
 		58646DB420F12780004024DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58646DB220F12780004024DE /* Main.storyboard */; };
 		58646DBD20F127C4004024DE /* ShellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646DBC20F127C4004024DE /* ShellManager.swift */; };
 		58646DBF20F12EC2004024DE /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58646DBE20F12EC2004024DE /* TimeManager.swift */; };
+		589965B1210C164C00A4D1B8 /* BatterySruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589965B0210C164C00A4D1B8 /* BatterySruct.swift */; };
 		5899946A20F252240095C094 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5899946920F252240095C094 /* Message.swift */; };
 		58BB6CAD21077DBF00EC0F01 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BB6CAC21077DBF00EC0F01 /* TabViewController.swift */; };
 		58E42D1620F4E1CC00CB3B20 /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E42D1520F4E1CC00CB3B20 /* ThreadManager.swift */; };
@@ -28,6 +29,7 @@
 		58646DB620F12780004024DE /* Magic_Mouse_Battery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Magic_Mouse_Battery.entitlements; sourceTree = "<group>"; };
 		58646DBC20F127C4004024DE /* ShellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellManager.swift; sourceTree = "<group>"; };
 		58646DBE20F12EC2004024DE /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		589965B0210C164C00A4D1B8 /* BatterySruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterySruct.swift; sourceTree = "<group>"; };
 		5899946920F252240095C094 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = MessageBox/Message.swift; sourceTree = "<group>"; };
 		58BB6CAC21077DBF00EC0F01 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		58E42D1520F4E1CC00CB3B20 /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadManager.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				5899946920F252240095C094 /* Message.swift */,
 				58E42D1520F4E1CC00CB3B20 /* ThreadManager.swift */,
 				58BB6CAC21077DBF00EC0F01 /* TabViewController.swift */,
+				589965B0210C164C00A4D1B8 /* BatterySruct.swift */,
 			);
 			path = "Magic Mouse Battery";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58646DBD20F127C4004024DE /* ShellManager.swift in Sources */,
+				589965B1210C164C00A4D1B8 /* BatterySruct.swift in Sources */,
 				58E42D1620F4E1CC00CB3B20 /* ThreadManager.swift in Sources */,
 				58646DAF20F12780004024DE /* ViewController.swift in Sources */,
 				5899946A20F252240095C094 /* Message.swift in Sources */,
