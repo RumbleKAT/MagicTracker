@@ -13,13 +13,23 @@ class TabViewController: NSViewController {
     @IBOutlet weak var batteryTitle: NSTextField!
     @IBOutlet weak var batteryPercent: NSTextField!
     @IBOutlet weak var batteryProgress: NSLevelIndicatorCell!
+    @IBOutlet weak var nextbtn: NSButton!
+    @IBOutlet weak var alarmBtn: NSButton!
+    
     
     let appDelegate = NSApplication.shared.delegate as! AppDelegate
     let shellManager = ShellManager()
     var batteries = [Battery]()
+    var idx = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialize()
+    }
+    
+    private func initialize(){
+        nextbtn.image = NSImage(named:NSImage.Name("next"))
+        alarmBtn.image = NSImage(named:NSImage.Name("alarm"))
     }
 
     @IBAction func optionClicked(_ sender: NSButton) {
@@ -27,6 +37,15 @@ class TabViewController: NSViewController {
         constructMenu(sender)
     }
 
+    @IBAction func nextClicked(_ sender: Any) {
+        if(batteries.count-1 != idx){
+            idx += 1
+        }else{
+            idx = 0
+        }
+        
+        draw()
+    }
     
     @objc func test(_ sender : Any?){
         print("test!!!")
@@ -74,10 +93,11 @@ extension TabViewController{
     }
     
     private func draw(){
-        self.batteryTitle.stringValue = batteries[0].name
-        self.batteryPercent.stringValue = String(batteries[0].percent) + "%"
-        self.batteryProgress.intValue = Int32(batteries[0].percent/10)
+        self.batteryTitle.stringValue = batteries[idx].name.replacingOccurrences(of: "\"", with: "", options: NSString.CompareOptions.literal, range: nil)
+        self.batteryPercent.stringValue = String(batteries[idx].percent) + "%"
+        self.batteryProgress.intValue = Int32(batteries[idx].percent/10)
     }
+    
     
     private func getBattery() -> Void{
         let str_command = "ioreg -r -d 1 -k BatteryPercent | egrep '(\"BatteryPercent\"|\"Product\") '"

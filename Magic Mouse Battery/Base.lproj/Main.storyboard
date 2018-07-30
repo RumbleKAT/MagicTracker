@@ -711,6 +711,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="nextClicked:" target="XfG-lQ-9wD" id="MXj-9j-qcb"/>
+                                            </connections>
                                         </button>
                                         <levelIndicator verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LcI-Np-Luh">
                                             <rect key="frame" x="20" y="31" width="281" height="20"/>
@@ -725,13 +728,17 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-yM-iiL">
                                             <rect key="frame" x="18" y="61" width="124" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Title" id="st2-Mz-ZHg">
-                                                <font key="font" metaFont="system" size="16"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KAV-W1-Gaw">
                                             <rect key="frame" x="143" y="61" width="34" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="P5q-at-oD7"/>
+                                                <constraint firstAttribute="width" constant="30" id="SEQ-WA-HkX"/>
+                                            </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="o8H-ut-l47">
                                                 <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
@@ -746,8 +753,6 @@
                                         <constraint firstItem="VUx-g5-GFz" firstAttribute="top" secondItem="Oil-6H-hZJ" secondAttribute="bottom" constant="10" id="5Z9-Qz-ujm"/>
                                         <constraint firstItem="DkY-UY-daI" firstAttribute="top" secondItem="Ae9-um-YpV" secondAttribute="top" constant="15" id="5m5-xd-OJ8"/>
                                         <constraint firstAttribute="bottom" secondItem="VUx-g5-GFz" secondAttribute="bottom" constant="20" id="66C-Jy-Uqj"/>
-                                        <constraint firstItem="DkY-UY-daI" firstAttribute="leading" secondItem="KAV-W1-Gaw" secondAttribute="trailing" constant="135" id="6Kw-wg-p1R"/>
-                                        <constraint firstItem="KAV-W1-Gaw" firstAttribute="top" secondItem="Ae9-um-YpV" secondAttribute="top" constant="10" id="92r-zN-voq"/>
                                         <constraint firstItem="VUx-g5-GFz" firstAttribute="top" secondItem="DkY-UY-daI" secondAttribute="bottom" constant="10" id="HTA-SJ-NFn"/>
                                         <constraint firstItem="rFd-yM-iiL" firstAttribute="top" secondItem="Ae9-um-YpV" secondAttribute="top" constant="10" id="IhI-Yh-1DQ"/>
                                         <constraint firstItem="KAV-W1-Gaw" firstAttribute="leading" secondItem="rFd-yM-iiL" secondAttribute="trailing" constant="5" id="LKR-mx-Ckp"/>
@@ -764,6 +769,8 @@
                                         <constraint firstItem="LcI-Np-Luh" firstAttribute="top" secondItem="rFd-yM-iiL" secondAttribute="bottom" constant="10" id="gl1-yq-z2g"/>
                                         <constraint firstItem="LcI-Np-Luh" firstAttribute="leading" secondItem="Ae9-um-YpV" secondAttribute="leading" constant="20" id="nLK-vD-44q"/>
                                         <constraint firstItem="VUx-g5-GFz" firstAttribute="leading" secondItem="Ae9-um-YpV" secondAttribute="leading" id="rYY-zp-mH7"/>
+                                        <constraint firstItem="KAV-W1-Gaw" firstAttribute="top" secondItem="Ae9-um-YpV" secondAttribute="top" constant="10" id="sLQ-vq-9q1"/>
+                                        <constraint firstItem="KAV-W1-Gaw" firstAttribute="top" secondItem="Ae9-um-YpV" secondAttribute="top" constant="10" id="udf-bJ-LfQ"/>
                                         <constraint firstItem="LcI-Np-Luh" firstAttribute="top" secondItem="rFd-yM-iiL" secondAttribute="bottom" constant="10" id="x1G-sn-3Hq"/>
                                         <constraint firstItem="rFd-yM-iiL" firstAttribute="leading" secondItem="Ae9-um-YpV" secondAttribute="leading" constant="20" id="xME-yg-l5O"/>
                                         <constraint firstItem="Oil-6H-hZJ" firstAttribute="leading" secondItem="DkY-UY-daI" secondAttribute="trailing" constant="10" id="z8U-6X-K2C"/>
@@ -816,9 +823,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="AlarmBtn" destination="Oil-6H-hZJ" id="KnP-2N-f1c"/>
+                        <outlet property="alarmBtn" destination="Oil-6H-hZJ" id="EY1-w2-0U9"/>
                         <outlet property="batteryPercent" destination="KAV-W1-Gaw" id="IMW-aL-ca6"/>
                         <outlet property="batteryProgress" destination="V3j-r6-4qS" id="8Q2-3t-GWG"/>
                         <outlet property="batteryTitle" destination="rFd-yM-iiL" id="hSb-aM-yPD"/>
+                        <outlet property="nextbtn" destination="DkY-UY-daI" id="X4M-oy-rwG"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
