@@ -73,20 +73,23 @@ extension TabViewController{
     }
     
     public func updateView(){
-        print("!!")
         getBattery()
     }
     
-    private func parsing(_ command : String) -> [Battery]{
+    private func parsing(_ command : String) throws -> [Battery]{
         let arr = command.split(separator: "\n")
         var temp_batteries = [Battery]()
         
         var idx = 0
-        for _ in 0...(arr.count/2)-1{
-            let product:String = String(arr[idx].split(separator: "=")[1]).trimmingCharacters(in: .whitespaces)
-            let percent:String = String(arr[idx+1].split(separator: "=")[1]).trimmingCharacters(in: .whitespaces)
-            temp_batteries.append(Battery(name: String(product), percent: Int(percent)!))
-            idx += 2
+        if(arr.count/2 > 0){
+            for _ in 0...(arr.count/2)-1{
+                let product:String = String(arr[idx].split(separator: "=")[1]).trimmingCharacters(in: .whitespaces)
+                let percent:String = String(arr[idx+1].split(separator: "=")[1]).trimmingCharacters(in: .whitespaces)
+                temp_batteries.append(Battery(name: String(product), percent: Int(percent)!))
+                idx += 2
+            }
+        }else{
+            temp_batteries.append(Battery(name: "Unknown", percent: 0)) //call exception
         }
         
         return temp_batteries
@@ -103,7 +106,7 @@ extension TabViewController{
         let str_command = "ioreg -r -d 1 -k BatteryPercent | egrep '(\"BatteryPercent\"|\"Product\") '"
         let command : String = shellManager.bash(str_command).trimmingCharacters(in: .whitespaces)
 
-        self.batteries = parsing(command)
+        self.batteries = try!parsing(command)
         draw()
     }
     

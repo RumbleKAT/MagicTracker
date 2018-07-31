@@ -734,10 +734,10 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KAV-W1-Gaw">
-                                            <rect key="frame" x="143" y="61" width="34" height="20"/>
+                                            <rect key="frame" x="143" y="61" width="35" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="P5q-at-oD7"/>
-                                                <constraint firstAttribute="width" constant="30" id="SEQ-WA-HkX"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="SEQ-WA-HkX"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="o8H-ut-l47">
                                                 <font key="font" metaFont="cellTitle"/>
@@ -781,7 +781,7 @@
                                 </view>
                                 <color key="borderColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="fillColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <font key="titleFont" size="22" name="NotoSansDisplay-Bold"/>
+                                <font key="titleFont" metaFont="system" size="22"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKG-Sj-Dwe">
                                 <rect key="frame" x="211" y="123" width="48" height="48"/>
