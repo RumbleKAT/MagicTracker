@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EDF0C3BBBA89A0518ED57F7E717B1DB /* DeterminateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57765DAA0490DF2B8307CF21DBC066 /* DeterminateAnimation.swift */; };
+		1A6D811E6AF8127B315211E37D2BF674 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D71D514B21351682A4C85339FD48D5 /* CircularProgressView.swift */; };
+		2FF79B53D1136AA746DB4AC2B2FEE15A /* ProgressKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 377C4BADD57B9E2558A443DC0A328C7F /* ProgressKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3393B865E5BED69CF5966C34698BE216 /* IndeterminateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355B47ADD629D1F5A276FBFB5AD50E58 /* IndeterminateAnimation.swift */; };
+		498DD14C58662ED6E4A22C64C2AB3A99 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EDB0BAFD685DDE3299AE69B6BE0973 /* Spinner.swift */; };
+		81C078A51A99119E63FC893A83FF9FD5 /* Pods-Magic Mouse Battery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CF7985FE88CC0651E179DDED8DB0B4 /* Pods-Magic Mouse Battery-dummy.m */; };
+		89FFCC474FC91E2F9298AB5243C60236 /* Pods-Magic Mouse Battery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6DE026AC832C64B9BD91BCCBC1328B /* Pods-Magic Mouse Battery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934A1295BB679569FFEC8B9A287DD215 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		9632003E5743ADE240C3289BEF401966 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		9730067B66FA16350114DF217F7AC7B8 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D50B8B1FCA4681758DF2B3D3B071C9 /* ProgressBar.swift */; };
+		AD1594373832DFA2CC289C2199CA2CDE /* Crawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D508B1FBA5332E8F54943E20B93F5D /* Crawler.swift */; };
+		B4711FB610BCF4120AD62E5F74A9CAC2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1750FF7E9F18C617B0F8238279C45B9B /* BaseView.swift */; };
+		BE7DC69A1EA62411FC0F7D4BB49DA0A7 /* RotatingArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC61A24D80F1B625DE8302D04B3231 /* RotatingArc.swift */; };
+		C0AA78766987A7E84803AF98EB11724F /* ShootingStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F045145C41B49D16E0271EC11A104 /* ShootingStars.swift */; };
+		C608F032E3DC2DA4E7479567B5D2C1B9 /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53517184B07E3741B157678F5E52441F /* Rainbow.swift */; };
+		CDD835C7533A443C75E934A3708A1DF4 /* ProgressKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FF22E87A102C26865FC98228C6635 /* ProgressKit-dummy.m */; };
+		F0575DA08AD69ABFD21BB2E14713EC91 /* MaterialProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FBC107ADF5B1F35D046D79D2B7DC65 /* MaterialProgress.swift */; };
+		F2F7C9D29422C2D63DE0CC37737EBFC8 /* ProgressUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550EED73657CD303A15A26335BA02869 /* ProgressUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		694334B0FA21D4C75A602437F9F3F908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABB79C48A704CAB259748C9FE6A5CCB0;
+			remoteInfo = ProgressKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EDB0BAFD685DDE3299AE69B6BE0973 /* Spinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spinner.swift; path = InDeterminate/Spinner.swift; sourceTree = "<group>"; };
+		05CF7985FE88CC0651E179DDED8DB0B4 /* Pods-Magic Mouse Battery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Magic Mouse Battery-dummy.m"; sourceTree = "<group>"; };
+		1750FF7E9F18C617B0F8238279C45B9B /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		20F9029E87EC018EC9B3FB984F5E3EBE /* Pods-Magic Mouse Battery-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Magic Mouse Battery-frameworks.sh"; sourceTree = "<group>"; };
+		2A4B9EB295DAC9FA302E8ACE8BAFFCBE /* Pods-Magic Mouse Battery-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Magic Mouse Battery-resources.sh"; sourceTree = "<group>"; };
+		2E1E089339F7741A5C044942261C2DB2 /* Pods-Magic Mouse Battery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Magic Mouse Battery-acknowledgements.plist"; sourceTree = "<group>"; };
+		30EBCD7079174E4D5B19813C6A0176DA /* Pods-Magic Mouse Battery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Magic Mouse Battery.release.xcconfig"; sourceTree = "<group>"; };
+		355B47ADD629D1F5A276FBFB5AD50E58 /* IndeterminateAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndeterminateAnimation.swift; path = InDeterminate/IndeterminateAnimation.swift; sourceTree = "<group>"; };
+		377C4BADD57B9E2558A443DC0A328C7F /* ProgressKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressKit-umbrella.h"; sourceTree = "<group>"; };
+		3A5467669E1382B708D99CCB7D5DDE9C /* Pods-Magic Mouse Battery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Magic Mouse Battery.debug.xcconfig"; sourceTree = "<group>"; };
+		4A57765DAA0490DF2B8307CF21DBC066 /* DeterminateAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeterminateAnimation.swift; path = Determinate/DeterminateAnimation.swift; sourceTree = "<group>"; };
+		52D508B1FBA5332E8F54943E20B93F5D /* Crawler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Crawler.swift; path = InDeterminate/Crawler.swift; sourceTree = "<group>"; };
+		53517184B07E3741B157678F5E52441F /* Rainbow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rainbow.swift; path = InDeterminate/Rainbow.swift; sourceTree = "<group>"; };
+		550EED73657CD303A15A26335BA02869 /* ProgressUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProgressUtils.swift; sourceTree = "<group>"; };
+		850F045145C41B49D16E0271EC11A104 /* ShootingStars.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShootingStars.swift; path = InDeterminate/ShootingStars.swift; sourceTree = "<group>"; };
+		885DF9ED9E5E8FD4332828838CDD57DD /* ProgressKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressKit-prefix.pch"; sourceTree = "<group>"; };
+		89D50B8B1FCA4681758DF2B3D3B071C9 /* ProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressBar.swift; path = Determinate/ProgressBar.swift; sourceTree = "<group>"; };
+		8D2B02724936F51D78A4548D7B2AB51F /* ProgressKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressKit.xcconfig; sourceTree = "<group>"; };
+		9064E68EA291F36B0C176BB6B3B4CCF6 /* ProgressKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProgressKit.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		953FF22E87A102C26865FC98228C6635 /* ProgressKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressKit-dummy.m"; sourceTree = "<group>"; };
+		AB976E94A63945EA41621E68AFBE752C /* Pods_Magic_Mouse_Battery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Magic_Mouse_Battery.framework; path = "Pods-Magic Mouse Battery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B713553EC45E7235F014CB2281B4A65D /* Pods-Magic Mouse Battery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Magic Mouse Battery-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8FBC107ADF5B1F35D046D79D2B7DC65 /* MaterialProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialProgress.swift; path = InDeterminate/MaterialProgress.swift; sourceTree = "<group>"; };
+		CDDC61A24D80F1B625DE8302D04B3231 /* RotatingArc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatingArc.swift; path = InDeterminate/RotatingArc.swift; sourceTree = "<group>"; };
+		CE852F18879DC22AEE653773F520147C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D71D514B21351682A4C85339FD48D5 /* CircularProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularProgressView.swift; path = Determinate/CircularProgressView.swift; sourceTree = "<group>"; };
+		D5C3D50DABACAE242A4D43016651A9FB /* ProgressKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressKit.framework; path = ProgressKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81476132AC62324BFC07506CF043B9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6DE026AC832C64B9BD91BCCBC1328B /* Pods-Magic Mouse Battery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Magic Mouse Battery-umbrella.h"; sourceTree = "<group>"; };
+		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E44B030A3B363262B62B8EA8C220FDA7 /* Pods-Magic Mouse Battery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Magic Mouse Battery.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F7991FAC7CA87A638CF686A90584E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9632003E5743ADE240C3289BEF401966 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE511D7FF31EC202AAD8B6E894D33C8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934A1295BB679569FFEC8B9A287DD215 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0ABA3D1BC12F29B6504D4980D494EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4B69AC03DA9CA9BF633C55FBEBCF65 /* ProgressKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F4B69AC03DA9CA9BF633C55FBEBCF65 /* ProgressKit */ = {
+			isa = PBXGroup;
+			children = (
+				1750FF7E9F18C617B0F8238279C45B9B /* BaseView.swift */,
+				D1D71D514B21351682A4C85339FD48D5 /* CircularProgressView.swift */,
+				52D508B1FBA5332E8F54943E20B93F5D /* Crawler.swift */,
+				4A57765DAA0490DF2B8307CF21DBC066 /* DeterminateAnimation.swift */,
+				355B47ADD629D1F5A276FBFB5AD50E58 /* IndeterminateAnimation.swift */,
+				C8FBC107ADF5B1F35D046D79D2B7DC65 /* MaterialProgress.swift */,
+				89D50B8B1FCA4681758DF2B3D3B071C9 /* ProgressBar.swift */,
+				550EED73657CD303A15A26335BA02869 /* ProgressUtils.swift */,
+				53517184B07E3741B157678F5E52441F /* Rainbow.swift */,
+				CDDC61A24D80F1B625DE8302D04B3231 /* RotatingArc.swift */,
+				850F045145C41B49D16E0271EC11A104 /* ShootingStars.swift */,
+				03EDB0BAFD685DDE3299AE69B6BE0973 /* Spinner.swift */,
+				E8528B7705BE42CB0967E926E78842C0 /* Support Files */,
+			);
+			name = ProgressKit;
+			path = ProgressKit;
+			sourceTree = "<group>";
+		};
+		6C9ECFAB98DCBF0AA74FBD8A1006FD25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB976E94A63945EA41621E68AFBE752C /* Pods_Magic_Mouse_Battery.framework */,
+				D5C3D50DABACAE242A4D43016651A9FB /* ProgressKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				1A0ABA3D1BC12F29B6504D4980D494EC /* Pods */,
+				6C9ECFAB98DCBF0AA74FBD8A1006FD25 /* Products */,
+				D57F25E373871396A925130699D1D44E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D57F25E373871396A925130699D1D44E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC536E95B6D782A7C815E18503C9453E /* Pods-Magic Mouse Battery */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E8528B7705BE42CB0967E926E78842C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE852F18879DC22AEE653773F520147C /* Info.plist */,
+				9064E68EA291F36B0C176BB6B3B4CCF6 /* ProgressKit.modulemap */,
+				8D2B02724936F51D78A4548D7B2AB51F /* ProgressKit.xcconfig */,
+				953FF22E87A102C26865FC98228C6635 /* ProgressKit-dummy.m */,
+				885DF9ED9E5E8FD4332828838CDD57DD /* ProgressKit-prefix.pch */,
+				377C4BADD57B9E2558A443DC0A328C7F /* ProgressKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProgressKit";
+			sourceTree = "<group>";
+		};
+		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		FC536E95B6D782A7C815E18503C9453E /* Pods-Magic Mouse Battery */ = {
+			isa = PBXGroup;
+			children = (
+				D81476132AC62324BFC07506CF043B9B /* Info.plist */,
+				E44B030A3B363262B62B8EA8C220FDA7 /* Pods-Magic Mouse Battery.modulemap */,
+				B713553EC45E7235F014CB2281B4A65D /* Pods-Magic Mouse Battery-acknowledgements.markdown */,
+				2E1E089339F7741A5C044942261C2DB2 /* Pods-Magic Mouse Battery-acknowledgements.plist */,
+				05CF7985FE88CC0651E179DDED8DB0B4 /* Pods-Magic Mouse Battery-dummy.m */,
+				20F9029E87EC018EC9B3FB984F5E3EBE /* Pods-Magic Mouse Battery-frameworks.sh */,
+				2A4B9EB295DAC9FA302E8ACE8BAFFCBE /* Pods-Magic Mouse Battery-resources.sh */,
+				DA6DE026AC832C64B9BD91BCCBC1328B /* Pods-Magic Mouse Battery-umbrella.h */,
+				3A5467669E1382B708D99CCB7D5DDE9C /* Pods-Magic Mouse Battery.debug.xcconfig */,
+				30EBCD7079174E4D5B19813C6A0176DA /* Pods-Magic Mouse Battery.release.xcconfig */,
+			);
+			name = "Pods-Magic Mouse Battery";
+			path = "Target Support Files/Pods-Magic Mouse Battery";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41C5CC1DF767D9FCE61AF52D73FC9B83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF79B53D1136AA746DB4AC2B2FEE15A /* ProgressKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F27C74EE59BCECD8EDCBDF6F94EEF36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89FFCC474FC91E2F9298AB5243C60236 /* Pods-Magic Mouse Battery-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ABB79C48A704CAB259748C9FE6A5CCB0 /* ProgressKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA58B4E1ACFFE9FB041A38A379F4CA4 /* Build configuration list for PBXNativeTarget "ProgressKit" */;
+			buildPhases = (
+				DC5243EE35787D407A7A7A9B2461B2DB /* Sources */,
+				CE511D7FF31EC202AAD8B6E894D33C8B /* Frameworks */,
+				41C5CC1DF767D9FCE61AF52D73FC9B83 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressKit;
+			productName = ProgressKit;
+			productReference = D5C3D50DABACAE242A4D43016651A9FB /* ProgressKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC52BAE9D15FFC185D37D633358F434C /* Pods-Magic Mouse Battery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862F1EEBCC4C8506AA225F4CB6C46AFF /* Build configuration list for PBXNativeTarget "Pods-Magic Mouse Battery" */;
+			buildPhases = (
+				2F4E4FB56B5E1B1B9BF922CCBDE54308 /* Sources */,
+				3F7991FAC7CA87A638CF686A90584E28 /* Frameworks */,
+				7F27C74EE59BCECD8EDCBDF6F94EEF36 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64802E32F6ADAEE5A66FE2AF279A80B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Magic Mouse Battery";
+			productName = "Pods-Magic Mouse Battery";
+			productReference = AB976E94A63945EA41621E68AFBE752C /* Pods_Magic_Mouse_Battery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6C9ECFAB98DCBF0AA74FBD8A1006FD25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC52BAE9D15FFC185D37D633358F434C /* Pods-Magic Mouse Battery */,
+				ABB79C48A704CAB259748C9FE6A5CCB0 /* ProgressKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F4E4FB56B5E1B1B9BF922CCBDE54308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C078A51A99119E63FC893A83FF9FD5 /* Pods-Magic Mouse Battery-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5243EE35787D407A7A7A9B2461B2DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4711FB610BCF4120AD62E5F74A9CAC2 /* BaseView.swift in Sources */,
+				1A6D811E6AF8127B315211E37D2BF674 /* CircularProgressView.swift in Sources */,
+				AD1594373832DFA2CC289C2199CA2CDE /* Crawler.swift in Sources */,
+				0EDF0C3BBBA89A0518ED57F7E717B1DB /* DeterminateAnimation.swift in Sources */,
+				3393B865E5BED69CF5966C34698BE216 /* IndeterminateAnimation.swift in Sources */,
+				F0575DA08AD69ABFD21BB2E14713EC91 /* MaterialProgress.swift in Sources */,
+				9730067B66FA16350114DF217F7AC7B8 /* ProgressBar.swift in Sources */,
+				CDD835C7533A443C75E934A3708A1DF4 /* ProgressKit-dummy.m in Sources */,
+				F2F7C9D29422C2D63DE0CC37737EBFC8 /* ProgressUtils.swift in Sources */,
+				C608F032E3DC2DA4E7479567B5D2C1B9 /* Rainbow.swift in Sources */,
+				BE7DC69A1EA62411FC0F7D4BB49DA0A7 /* RotatingArc.swift in Sources */,
+				C0AA78766987A7E84803AF98EB11724F /* ShootingStars.swift in Sources */,
+				498DD14C58662ED6E4A22C64C2AB3A99 /* Spinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64802E32F6ADAEE5A66FE2AF279A80B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressKit;
+			target = ABB79C48A704CAB259748C9FE6A5CCB0 /* ProgressKit */;
+			targetProxy = 694334B0FA21D4C75A602437F9F3F908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		57D1386E2315FBF062C669C150A07CB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2B02724936F51D78A4548D7B2AB51F /* ProgressKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressKit/ProgressKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/ProgressKit/ProgressKit.modulemap";
+				PRODUCT_MODULE_NAME = ProgressKit;
+				PRODUCT_NAME = ProgressKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7767886B99C6A778AFE2D94019FF7E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2B02724936F51D78A4548D7B2AB51F /* ProgressKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressKit/ProgressKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/ProgressKit/ProgressKit.modulemap";
+				PRODUCT_MODULE_NAME = ProgressKit;
+				PRODUCT_NAME = ProgressKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		850722003737B7FD08243B4E28FB84E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5467669E1382B708D99CCB7D5DDE9C /* Pods-Magic Mouse Battery.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Magic Mouse Battery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-Magic Mouse Battery/Pods-Magic Mouse Battery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		885072FBE917853E9C621EA32511C1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E574923E2959CFEF4FEBC7B272DBC6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FCC7BBF8622934AA20209D0D8B7C445F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30EBCD7079174E4D5B19813C6A0176DA /* Pods-Magic Mouse Battery.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Magic Mouse Battery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-Magic Mouse Battery/Pods-Magic Mouse Battery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885072FBE917853E9C621EA32511C1DA /* Debug */,
+				E574923E2959CFEF4FEBC7B272DBC6AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA58B4E1ACFFE9FB041A38A379F4CA4 /* Build configuration list for PBXNativeTarget "ProgressKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7767886B99C6A778AFE2D94019FF7E2D /* Debug */,
+				57D1386E2315FBF062C669C150A07CB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862F1EEBCC4C8506AA225F4CB6C46AFF /* Build configuration list for PBXNativeTarget "Pods-Magic Mouse Battery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				850722003737B7FD08243B4E28FB84E5 /* Debug */,
+				FCC7BBF8622934AA20209D0D8B7C445F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

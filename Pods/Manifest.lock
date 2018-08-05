@@ -1,0 +1,16 @@
+PODS:
+  - ProgressKit (0.7)
+
+DEPENDENCIES:
+  - ProgressKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ProgressKit
+
+SPEC CHECKSUMS:
+  ProgressKit: 47145a4a267a9b4262c481d8c46e1d527dd9e024
+
+PODFILE CHECKSUM: fe052cea3993081002180c1b6bb889240bec7641
+
+COCOAPODS: 1.5.0

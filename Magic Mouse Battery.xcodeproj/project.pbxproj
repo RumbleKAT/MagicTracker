@@ -17,6 +17,7 @@
 		5899946A20F252240095C094 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5899946920F252240095C094 /* Message.swift */; };
 		58BB6CAD21077DBF00EC0F01 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BB6CAC21077DBF00EC0F01 /* TabViewController.swift */; };
 		58E42D1620F4E1CC00CB3B20 /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E42D1520F4E1CC00CB3B20 /* ThreadManager.swift */; };
+		BCDE613CFC3CC1A1C172B012 /* Pods_Magic_Mouse_Battery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3C5C8732562E7F163E15BA /* Pods_Magic_Mouse_Battery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		5899946920F252240095C094 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = MessageBox/Message.swift; sourceTree = "<group>"; };
 		58BB6CAC21077DBF00EC0F01 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		58E42D1520F4E1CC00CB3B20 /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadManager.swift; sourceTree = "<group>"; };
+		8098638E2EDEA4F33460489C /* Pods-Magic Mouse Battery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magic Mouse Battery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Magic Mouse Battery/Pods-Magic Mouse Battery.release.xcconfig"; sourceTree = "<group>"; };
+		F0B3F87D9A57C461416B74E6 /* Pods-Magic Mouse Battery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magic Mouse Battery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Magic Mouse Battery/Pods-Magic Mouse Battery.debug.xcconfig"; sourceTree = "<group>"; };
+		FD3C5C8732562E7F163E15BA /* Pods_Magic_Mouse_Battery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Magic_Mouse_Battery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDE613CFC3CC1A1C172B012 /* Pods_Magic_Mouse_Battery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0533A4B32F9BA0555C066534 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3F87D9A57C461416B74E6 /* Pods-Magic Mouse Battery.debug.xcconfig */,
+				8098638E2EDEA4F33460489C /* Pods-Magic Mouse Battery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		58646DA020F1277F004024DE = {
 			isa = PBXGroup;
 			children = (
 				58646DAB20F12780004024DE /* Magic Mouse Battery */,
 				58646DAA20F12780004024DE /* Products */,
+				0533A4B32F9BA0555C066534 /* Pods */,
+				C784274608F63FF6DE381ED0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +97,14 @@
 			path = "Magic Mouse Battery";
 			sourceTree = "<group>";
 		};
+		C784274608F63FF6DE381ED0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD3C5C8732562E7F163E15BA /* Pods_Magic_Mouse_Battery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58646DB920F12780004024DE /* Build configuration list for PBXNativeTarget "Magic Mouse Battery" */;
 			buildPhases = (
+				4C5163BDC63D010BEB128C59 /* [CP] Check Pods Manifest.lock */,
 				58646DA520F1277F004024DE /* Sources */,
 				58646DA620F1277F004024DE /* Frameworks */,
 				58646DA720F1277F004024DE /* Resources */,
+				F77A46A8B24DF6A7F9E95D61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +172,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5163BDC63D010BEB128C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Magic Mouse Battery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77A46A8B24DF6A7F9E95D61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Magic Mouse Battery/Pods-Magic Mouse Battery-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProgressKit/ProgressKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magic Mouse Battery/Pods-Magic Mouse Battery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58646DA520F1277F004024DE /* Sources */ = {
@@ -285,6 +350,7 @@
 		};
 		58646DBA20F12780004024DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B3F87D9A57C461416B74E6 /* Pods-Magic Mouse Battery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Magic Mouse Battery/Magic_Mouse_Battery.entitlements";
@@ -300,6 +366,7 @@
 		};
 		58646DBB20F12780004024DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8098638E2EDEA4F33460489C /* Pods-Magic Mouse Battery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Magic Mouse Battery/Magic_Mouse_Battery.entitlements";

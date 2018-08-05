@@ -806,6 +806,13 @@
                                     <action selector="optionClicked:" target="XfG-lQ-9wD" id="KJ4-mc-jr7"/>
                                 </connections>
                             </button>
+                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDK-OR-ZeL">
+                                <rect key="frame" x="20" y="141" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <segue destination="l0E-Va-wCl" kind="embed" id="33s-H6-DbS"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FU2-LO-JNh" firstAttribute="top" secondItem="0nS-GD-DfN" secondAttribute="bottom" constant="15" id="L6Y-0L-28A"/>
@@ -835,6 +842,28 @@
                 <userDefaultsController representsSharedInstance="YES" id="ow0-jR-3fM"/>
             </objects>
             <point key="canvasLocation" x="75" y="654.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dEP-gN-Pzi">
+            <objects>
+                <viewController id="l0E-Va-wCl" customClass="ViewController" customModule="Magic_Mouse_Battery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="ebs-Rg-LDL">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG3-HO-euK" customClass="Crawler" customModule="ProgressKit">
+                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="test" destination="kG3-HO-euK" id="EFz-wP-jUS"/>
+                    </connections>
+                </viewController>
+                <customObject id="FYU-wk-HYR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="998"/>
         </scene>
     </scenes>
     <resources>

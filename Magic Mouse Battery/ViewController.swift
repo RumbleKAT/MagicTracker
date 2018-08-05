@@ -7,10 +7,13 @@
 //
 
 import Cocoa
+import ProgressKit
 
 class ViewController: NSViewController {
 
     let shellManager = ShellManager();
+    
+    @IBOutlet weak var test: Crawler!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +33,12 @@ class ViewController: NSViewController {
         */
         
         //testCall(callback: testCall2)
-
-        let thread = ThreadManager()
-        thread.setThread(testCall2)
+        //progress.animated = true
         
-        let thread_2 = ThreadManager()
-        thread_2.setThread(testCall3)
+        test.animate = true
+        
+        
+        print("Call subViewController")
         
     }
     

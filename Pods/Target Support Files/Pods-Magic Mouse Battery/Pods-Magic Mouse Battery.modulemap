@@ -1,0 +1,6 @@
+framework module Pods_Magic_Mouse_Battery {
+  umbrella header "Pods-Magic Mouse Battery-umbrella.h"
+
+  export *
+  module * { export * }
+}
