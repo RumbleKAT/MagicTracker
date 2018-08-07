@@ -27,17 +27,24 @@ open class BaseView : NSView {
         notifyViewRedesigned()
     }
 
-    @IBInspectable open var background: NSColor = NSColor(red: 88.3 / 256, green: 104.4 / 256, blue: 118.5 / 256, alpha: 1.0) {
+    @IBInspectable open var background: NSColor = NSColor(red: 88.3 / 256, green: 104.4 / 256, blue: 118.5 / 256, alpha: 0.1) {
         didSet {
             self.notifyViewRedesigned()
         }
     }
 
-    @IBInspectable open var foreground: NSColor = NSColor(red: 66.3 / 256, green: 173.7 / 256, blue: 106.4 / 256, alpha: 1.0) {
+    @IBInspectable open var foreground: NSColor = NSColor(red: 1, green: 1, blue: 1, alpha: 1.0) {
         didSet {
             self.notifyViewRedesigned()
         }
     }
+    
+    @IBInspectable open var middleground: NSColor = NSColor(red: 0, green: 1, blue: 0, alpha: 1.0) {
+        didSet {
+            self.notifyViewRedesigned()
+        }
+    }
+
 
     @IBInspectable open var cornerRadius: CGFloat = 5.0 {
         didSet {

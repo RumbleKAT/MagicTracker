@@ -13,7 +13,11 @@ class ViewController: NSViewController {
 
     let shellManager = ShellManager();
     
-    @IBOutlet weak var test: Crawler!
+    @IBOutlet weak var percentage: CircularProgressView!
+    // @IBOutlet weak var test: Crawler!
+    
+    @IBOutlet weak var NextBtn: NSButton!
+    @IBOutlet weak var AlramBtn: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +39,8 @@ class ViewController: NSViewController {
         //testCall(callback: testCall2)
         //progress.animated = true
         
-        test.animate = true
-        
+     //   test.animate = true
+        percentage.progress = 0.5
         
         print("Call subViewController")
         
@@ -55,11 +59,6 @@ class ViewController: NSViewController {
     func testCall2(){
         print("!!!")
     }
-
-    override var representedObject: Any? {
-        didSet {
-        }
-    }
     
     func testCall(callback: () -> Void){
         print("!!")
@@ -76,7 +75,9 @@ class ViewController: NSViewController {
     
         //check - if charged send notification
     }
+}
 
-
+extension ViewController{
+    
 }
 

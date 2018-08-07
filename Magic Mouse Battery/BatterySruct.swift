@@ -12,10 +12,12 @@ import Foundation
 struct Battery{
     var name: String
     var percent : Int
+    var charge : Int
     
-    init(name: String, percent: Int){
+    init(name: String, percent: Int, charge: Int){
         self.name = name
         self.percent = percent
+        self.charge = charge
     }
 }
 

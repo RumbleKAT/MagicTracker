@@ -34,7 +34,7 @@ open class CircularProgressView: DeterminateAnimation {
         progressLayer.lineWidth = strokeWidth
         percentLabelLayer.isHidden = !showPercent
 
-        backgroundCircle.strokeColor = foreground.withAlphaComponent(0.5).cgColor
+        backgroundCircle.strokeColor = foreground.withAlphaComponent(0.2).cgColor
         progressLayer.strokeColor = foreground.cgColor
         percentLabelLayer.foregroundColor = foreground.cgColor
     }
@@ -81,7 +81,7 @@ open class CircularProgressView: DeterminateAnimation {
             progressLayer.lineWidth = strokeWidth == -1 ? (rect.width * strokeScalingFactor) : strokeWidth
             
             progressLayer.frame = rect
-            progressLayer.strokeColor = foreground.cgColor
+            progressLayer.strokeColor = middleground.withAlphaComponent(0.5).cgColor
             let arcPath = NSBezierPath()
             let startAngle = CGFloat(90)
             arcPath.appendArc(withCenter: rect.mid, radius: radius, startAngle: startAngle, endAngle: (startAngle - 360), clockwise: true)
@@ -92,7 +92,7 @@ open class CircularProgressView: DeterminateAnimation {
         // Percentage Layer
         do {
             percentLabelLayer.string = "0%"
-            percentLabelLayer.foregroundColor = foreground.cgColor
+            percentLabelLayer.foregroundColor = middleground.cgColor
             percentLabelLayer.frame = rect
             percentLabelLayer.font = "Helvetica Neue Light" as CFTypeRef
             percentLabelLayer.alignmentMode = kCAAlignmentCenter
