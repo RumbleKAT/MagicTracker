@@ -6,15 +6,15 @@ this is program only for mac OS and you have to check your computer has magic mo
 
 ****
 ## How to start this program?
-'''
+
 1. just drop this program in applications and click it.
 2. you can find little plug icon in top bar.
 3. click the plug icon
-'''
 
 ****
 ## Sample Image
 ![Alt text](/img/1.png "Published Image")
 ![Alt text](/img/2.png)
 ![Alt text](/img/3.png)
+
 
