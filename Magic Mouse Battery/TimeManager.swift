@@ -12,10 +12,14 @@ class TimeManager{
     var interval: Double
     var timer: Timer?
     var count: Int
+    var command: String
+    var shell : ShellManager
     
-    init(){
-        interval = 0.0
+    init(_ intervalParam : Double ,_ param : String){
+        interval = intervalParam
         count = 0
+        command = param
+        shell = ShellManager()
     }
     
     public func setInterval(_ param: Double){

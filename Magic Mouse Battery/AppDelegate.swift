@@ -14,6 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
     let popover = NSPopover()
     var tabviewController : TabViewController? = nil
+    var viewController : ViewController? = nil
+
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let button = statusItem.button {
@@ -22,6 +24,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         popover.contentViewController = TabViewController.freshController()
         tabviewController = popover.contentViewController as? TabViewController
+        
+        popover.contentViewController = ViewController.freshController()
+        viewController = popover.contentViewController as? ViewController
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -40,7 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusItem.button{
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
-        tabviewController?.updateView()
+        viewController?.updateView()
     }
     
     func closePopover(sender: Any?){
